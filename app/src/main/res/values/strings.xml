@@ -1,0 +1,109 @@
+<resources>
+    <string name="appName">Wilder</string>
+    <string name="packageName">net.n0code.wilder</string>
+
+    <!-- Shared preferences -->
+    <string name="wilderSharedPreferences">wilder_shared_preferences</string>
+
+    <string name="prefCurrentUserEmailKey">current_user</string>
+    <string name="prefStayLoggedInKey">stay_logged_in</string>
+    <string name="prefChooseExcursionNamesKey">choose_excursion_names</string>
+
+    <!-- Preference Screen -->
+    <string name="prefDeviceLocationSettingsTitle">Device Location Settings</string>
+    <string name="prefDeviceAppSettingsTitle">Device App Settings</string>
+    <string name="prefLogOutTitle">Log out</string>
+    <string name="prefAppSettingsTitle">Wilder App Settings</string>
+    <string name="prefStayLoggedInLabel">Stay logged in</string>
+    <string name="prefChooseExcursionNamesLabel">Choose excursion names</string>
+
+
+    <!-- Create account -->
+    <string name="userUsernameHint">Username</string>
+    <string name="userPasswordHint">Password</string>
+    <string name="userEmailHint">Email</string>
+
+    <string name="stayLoggedInLabel">Stay logged in</string>
+    <string name="createAccountButtonLabel">Create account</string>
+
+    <!-- Trip List -->
+    <string name="buttonUndo">undo</string>
+
+    <!-- View, create & edit trip -->
+    <string name="ok">OK</string>
+    <string name="viewPagerDialogTitle">Tracking is on. Turn tracking off before exiting.</string>
+
+    <string name="viewTripTitle">Trip Information</string>
+    <string name="editTripTitle">Edit Trip</string>
+    <string name="createTripTitle">Create Trip</string>
+
+    <string name="defaultTripName">My Trip</string>
+
+    <string name="tripTitleLabel">Title</string>
+    <string name="tripDescriptionLabel">Description</string>
+    <string name="tripShareModeLabel">Share mode</string>
+    <string name="tripTravelModeLabel">Travel mode</string>
+    <string name="tripCloneCountLabel">Clones</string>
+
+    <string name="tripExplorerLabel">Explorer</string>
+    <string name="tripLastModifiedDateLabel">Last modified</string>
+
+    <string name="tripOriginalAuthorLabel">Created by</string>
+    <string name="tripCreationDateLabel">Created on</string>
+
+    <string name="trip_excursions">Excursions</string>
+
+    <!-- Excursion List -->
+    <string name="excursionListTitle">Excursions</string>
+
+    <!-- Excursion Info -->
+    <string name="excursionInfoTitle">Excursion Information</string>
+    <string name="excursionTitleLabel">Title</string>
+    <string name="excursionDescriptionLabel">Description</string>
+    <string name="excursionCreator">Created by</string>
+    <string name="excursionDistance">Distance</string>
+    <string name="excursionMinAltitude">Min altitude</string>
+    <string name="excursionMaxAltitude">Max altitude</string>
+    <string name="excursionElevationChange">&#8710; Elevation</string>
+    <string name="excursionStartLocation">Start location</string>
+    <string name="excursionStartTime">Started on</string>
+    <string name="excursionEndTime">Ended on</string>
+    <string name="excursionDuration">Duration</string>
+
+    <!-- Excursion edit -->
+    <string name="editExcursionTitle">Edit Excursion</string>
+    <string name="excursionEditTitle">Title</string>
+    <string name="excursionEditDescription">Description</string>
+
+    <!-- Location Server -->
+    <string name="locationServerPermissionsGranted">net.n0code.wilder.PERMISSIONS_GRANTED</string>
+    <string name="locationServerTrackingOn">net.n0code.wilder.TRACKING_ON</string>
+    <string name="locationServerTrackingOff">net.n0code.wilder.TRACKING_OFF</string>
+    <string name="locationServerLocationChanged">net.n0code.wilder.LOCATION_CHANGED</string>
+
+    <!-- POI List -->
+    <string name="pointsOfInterestListTitle">Points of Interest</string>
+
+    <!--  View, create & edit pois -->
+    <string name="viewPointOfInterestTitle">Point of Interest Info</string>
+    <string name="addPointOfInterestTitle">Add Point of Interest</string>
+    <string name="editPointOfInterestTitle">Edit Point of Interest</string>
+
+    <string name="pointOfInterestTypeLabel">Type</string>
+    <string name="pointOfInterestTitleLabel">Title</string>
+    <string name="pointOfInterestDescriptionLabel">Description</string>
+    <string name="pointOfInterestCreator">Created by</string>
+    <string name="pointOfInterestExcursion">Excursion</string>
+    <string name="pointOfInterestLatitudeLabel">Latitude</string>
+    <string name="pointOfInterestLongitudeLabel">Longitude</string>
+    <string name="pointOfInterestLocation">Location</string>
+    <string name="pointOfInterestDateAndTime">Created on</string>
+
+    <!-- Excursion name prompt -->
+    <string name="excursionNamePromptTitle">Excursion name</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- Natural -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Natural"
+        style="@style/Wilder.TypePicker.Heading"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="6"
+        android:layout_gravity="center" >
+
+        <ImageButton
+            android:src="@drawable/bird_24dp"
+            android:contentDescription="Bird"/>
+
+        <ImageButton
+            android:src="@drawable/cave_24dp"
+            android:contentDescription="Cave"/>
+
+        <ImageButton
+            android:src="@drawable/fish_24dp"
+            android:contentDescription="Fish"/>
+
+        <ImageButton
+            android:src="@drawable/flower_24dp"
+            android:contentDescription="Flower"/>
+
+        <ImageButton
+            android:src="@drawable/formation_24dp"
+            android:contentDescription="Formation"/>
+
+        <ImageButton
+            android:src="@drawable/insect_24dp"
+            android:contentDescription="Insect"/>
+
+        <ImageButton
+            android:src="@drawable/plant_24dp"
+            android:contentDescription="Plant"/>
+
+        <ImageButton
+            android:src="@drawable/tree_24dp"
+            android:contentDescription="Tree"/>
+
+        <ImageButton
+            android:src="@drawable/waterfall_24dp"
+            android:contentDescription="Waterfall"/>
+
+        <ImageButton
+            android:src="@drawable/wildlife_24dp"
+            android:contentDescription="Wildlife"/>
+
+    </GridLayout>
+
+    <!-- Structures -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Man-made"
+        style="@style/Wilder.TypePicker.Heading"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="6"
+        android:layout_gravity="center" >
+
+        <ImageButton
+            android:src="@drawable/bridge_24dp"
+            android:contentDescription="Bridge"/>
+
+        <ImageButton
+            android:src="@drawable/cabin_24dp"
+            android:contentDescription="Cabin"/>
+
+        <ImageButton
+            android:src="@drawable/campfire_24dp"
+            android:contentDescription="Campfire"/>
+
+        <ImageButton
+            android:src="@drawable/structure_24dp"
+            android:contentDescription="Structure"/>
+
+        <ImageButton
+            android:src="@drawable/tent_24dp"
+            android:contentDescription="Tent"/>
+
+        <ImageButton
+            android:src="@drawable/trailhead_24dp"
+            android:contentDescription="Trailhead"/>
+
+    </GridLayout>
+
+    <!-- Activities -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activities"
+        style="@style/Wilder.TypePicker.Heading"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="6"
+        android:layout_gravity="center" >
+
+        <ImageButton
+            android:src="@drawable/biking_24dp"
+            android:contentDescription="Biking"/>
+
+        <ImageButton
+            android:src="@drawable/boating_24dp"
+            android:contentDescription="Boating"/>
+
+        <ImageButton
+            android:src="@drawable/climbing_24dp"
+            android:contentDescription="Climbing"/>
+
+        <ImageButton
+            android:src="@drawable/fishing_24dp"
+            android:contentDescription="Fishing"/>
+
+        <ImageButton
+            android:src="@drawable/swimming_24dp"
+            android:contentDescription="Swimming"/>
+
+    </GridLayout>
+
+    <!-- Services -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Services"
+        style="@style/Wilder.TypePicker.Heading"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="6"
+        android:layout_gravity="center" >
+
+        <ImageButton
+            android:src="@drawable/restaurant_24dp"
+            android:contentDescription="Restaurant"/>
+
+        <ImageButton
+            android:src="@drawable/shopping_24dp"
+            android:contentDescription="Shopping"/>
+
+        <ImageButton
+            android:src="@drawable/toilet_24dp"
+            android:contentDescription="Toilet"/>
+
+        <ImageButton
+            android:src="@drawable/water_24dp"
+            android:contentDescription="Water"/>
+
+    </GridLayout>
+
+    <!-- Miscellaneous -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Miscellaneous"
+        style="@style/Wilder.TypePicker.Heading"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="6"
+        android:layout_gravity="center" >
+
+        <ImageButton
+            android:src="@drawable/caution_24dp"
+            android:contentDescription="Caution"/>
+
+        <ImageButton
+            android:src="@drawable/marker_24dp"
+            android:contentDescription="Marker"/>
+
+        <ImageButton
+            android:src="@drawable/scenic_24dp"
+            android:contentDescription="Scenic"/>
+
+        <ImageButton
+            android:src="@drawable/star_24dp"
+            android:contentDescription="Star"/>
+
+    </GridLayout>
+
+</LinearLayout>

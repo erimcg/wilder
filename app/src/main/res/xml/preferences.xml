@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:title="@string/prefDeviceLocationSettingsTitle" >
+        <intent android:action="android.settings.LOCATION_SOURCE_SETTINGS" />
+    </Preference>
+    <Preference
+        android:title="@string/prefDeviceAppSettingsTitle" >
+        <intent
+            android:action="android.settings.APPLICATION_DETAILS_SETTINGS"
+            android:data="package:net.n0code.wilder"/>
+    </Preference>
+    <PreferenceScreen
+        android:title="@string/prefAppSettingsTitle">
+        <CheckBoxPreference
+        android:key="@string/prefStayLoggedInKey"
+        android:title="@string/prefStayLoggedInLabel"
+        android:defaultValue="true"/>
+        <CheckBoxPreference
+            android:key="@string/prefChooseExcursionNamesKey"
+            android:title="@string/prefChooseExcursionNamesLabel"
+            android:defaultValue="true"/>
+    </PreferenceScreen>
+    <Preference
+        android:title="@string/prefLogOutTitle" >
+        <intent android:action="net.n0code.wilder.ui.login.Login" />
+    </Preference>
+
+</PreferenceScreen>

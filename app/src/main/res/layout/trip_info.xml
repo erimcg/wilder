@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true">
+
+    <!-- Toolbar -->
+
+    <android.support.constraint.Guideline
+        android:id="@id/guideline"
+        style="@style/Wilder.Toolbar.Guideline" />
+
+    <View
+        android:id="@id/toolbar"
+        style="@style/Wilder.Toolbar"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageButton
+        android:id="@id/tripEditButton"
+        android:src="@drawable/ic_mode_edit_black_24dp"
+        style="@style/Wilder.Toolbar.ImageButton"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@id/viewTripTitle"
+        android:text="@string/viewTripTitle"
+        style="@style/Wilder.Toolbar.Title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/guideline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="0dp">
+
+    <!-- Trip Fields -->
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/constraintLayout">
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="102dp" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/textView1"
+            android:textAppearance="@style/Wilder.InfoElement.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/tripTitleLabel"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/tripTitle"
+            android:layout_marginBottom="0dp" />
+
+        <TextView
+            android:id="@id/tripTitle"
+            android:textAppearance="@style/Wilder.InfoElement"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline3"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintHorizontal_bias="0.0" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/textView2"
+            android:textAppearance="@style/Wilder.InfoElement.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/tripDescriptionLabel"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tripDescription"
+            android:layout_marginTop="0dp" />
+
+        <TextView
+            android:id="@id/tripDescription"
+            android:textAppearance="@style/Wilder.InfoElement"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline3"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/tripTitle" />
+
+        <!-- Explorer -->
+        <TextView
+            android:id="@+id/textView4"
+            android:textAppearance="@style/Wilder.InfoElement.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/tripExplorerLabel"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/tripExplorer"
+            android:layout_marginBottom="0dp" />
+
+        <TextView
+            android:id="@id/tripExplorer"
+            android:textAppearance="@style/Wilder.InfoElement"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline3"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/tripDescription" />
+
+        <!-- Travel mode -->
+        <TextView
+            android:id="@+id/textView5"
+            android:textAppearance="@style/Wilder.InfoElement.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tripTravelModeLabel"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tripTravelMode"
+            android:layout_marginBottom="0dp" />
+
+        <TextView
+            android:id="@id/tripTravelMode"
+            android:textAppearance="@style/Wilder.InfoElement"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline3"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/tripExplorer"
+            app:layout_constraintHorizontal_bias="0.0" />
+
+        <!-- Share mode -->
+        <TextView
+            android:id="@+id/textView6"
+            android:textAppearance="@style/Wilder.InfoElement.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tripShareModeLabel"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/tripShareMode"
+            android:layout_marginBottom="0dp" />
+
+        <TextView
+            android:id="@id/tripShareMode"
+            android:textAppearance="@style/Wilder.InfoElement"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline3"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/tripTravelMode"
+            app:layout_constraintHorizontal_bias="0.0" />
+
+        <!-- Clone count -->
+
+        <TextView
+            android:id="@+id/textView9"
+            android:textAppearance="@style/Wilder.InfoElement.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tripCloneCountLabel"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/tripCloneCount"
+            android:layout_marginBottom="0dp" />
+
+        <TextView
+            android:id="@id/tripCloneCount"
+            android:textAppearance="@style/Wilder.InfoElement"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline3"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/tripShareMode"
+            app:layout_constraintHorizontal_bias="0.0" />
+
+        <!-- Creation date -->
+        <TextView
+            android:id="@+id/textView7"
+            android:textAppearance="@style/Wilder.InfoElement.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tripCreationDateLabel"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tripCreationDate"
+            android:layout_marginBottom="0dp" />
+
+        <TextView
+            android:id="@id/tripCreationDate"
+            android:textAppearance="@style/Wilder.InfoElement"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline3"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/tripCloneCount"
+            app:layout_constraintHorizontal_bias="0.0" />
+
+        <!-- Last modified date -->
+        <TextView
+            android:id="@+id/textView8"
+            android:textAppearance="@style/Wilder.InfoElement.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tripLastModifiedDateLabel"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tripLastModifiedDate"
+            android:layout_marginBottom="0dp" />
+
+        <TextView
+            android:id="@id/tripLastModifiedDate"
+            android:textAppearance="@style/Wilder.InfoElement"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline3"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/tripCreationDate"
+            app:layout_constraintHorizontal_bias="0.0" />
+
+        <!-- Author -->
+        <TextView
+            android:id="@+id/textView3"
+            android:textAppearance="@style/Wilder.InfoElement.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/tripOriginalAuthorLabel"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/tripOriginalAuthor"
+            android:layout_marginBottom="0dp" />
+
+        <TextView
+            android:id="@id/tripOriginalAuthor"
+            android:textAppearance="@style/Wilder.InfoElement"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline3"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tripLastModifiedDate"
+            app:layout_constraintHorizontal_bias="0.0" />
+
+        <!-- Excursions -->
+
+        <TextView
+            android:id="@+id/textView10"
+            android:textAppearance="@style/Wilder.InfoElement.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/trip_excursions"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="0dp"
+            app:layout_constraintTop_toTopOf="@id/tripExcursions" />
+
+        <TextView
+            android:id="@id/tripExcursions"
+            android:textAppearance="@style/Wilder.InfoElement"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/tripOriginalAuthor"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="8dp"
+            android:paddingBottom="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline3"
+            app:layout_constraintHorizontal_bias="0.0" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

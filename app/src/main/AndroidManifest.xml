@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.n0code.wilder">
+
+    <uses-sdk android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/appName"
+        android:supportsRtl="true"
+        android:theme="@style/Wilder">
+        <activity
+            android:name=".ui.Start"
+            android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.login.Login"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="net.n0code.wilder.ui.login.Login" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.login.CreateAccount"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.TripList" />
+        <activity android:name=".ui.TripEdit" />
+        <activity
+            android:name=".ui.POIEdit"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".ui.ExcursionEdit" />
+        <activity
+            android:name=".ui.tripViewer.TripViewPager"
+            android:parentActivityName=".ui.TripList"
+            android:screenOrientation="portrait">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.TripList" />
+        </activity>
+
+        <fragment android:name=".activity.excursionViewer.ObservationsListFragment" />
+        <fragment android:name=".activity.excursionViewer.ExcursionViewFragment" />
+        <fragment android:name=".activity.excursionViewer.ObservationViewFragment" />
+        <fragment android:name=".activity.excursionViewer.MapViewFragment" />
+
+        <activity android:name=".ui.settings.Settings" />
+        <service android:name=".location.LocationService" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAhz4PXXN4u6H2Rg23eV_EQzE4F0828gv4" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+    </application>
+
+</manifest>

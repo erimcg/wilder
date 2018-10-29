@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Toolbar -->
+    <item type="id" name="guideline" />
+    <item type="id" name="toolbar" />
+
+    <item type="id" name="editTripTitle" />
+    <item type="id" name="listTripsTitle" />
+    <item type="id" name="viewTripTitle" />
+
+    <item type="id" name="viewPointOfInterestTitle" />
+    <item type="id" name="editPointOfInterestTitle" />
+    <item type="id" name="listPointsOfInterestTitle" />
+
+    <item type="id" name="searchView" />
+
+    <!-- Login and create account -->
+    <item type="id" name="usernameEditText" />
+    <item type="id" name="passwordEditText" />
+    <item type="id" name="emailEditText" />
+    <item type="id" name="stayLoggedInCheckBox" />
+    <item type="id" name="loginButton" />
+    <item type="id" name="createAccountButton" />
+
+    <!-- List trips -->
+    <item type="id" name="tripListView" />
+    <item type="id" name="addTripButton" />
+
+    <!-- Trip View Pager -->
+    <item type="id" name="tripViewerPager" />
+    <item type="id" name="pageIndicator" />
+
+    <!-- View & create trips -->
+    <item type="id" name="tripEditButton" />
+
+    <item type="id" name="tripTitle" />
+    <item type="id" name="tripDescription" />
+    <item type="id" name="tripShareMode" />
+    <item type="id" name="tripTravelMode" />
+    <item type="id" name="tripCloneCount" />
+
+    <item type="id" name="tripExplorer" />
+    <item type="id" name="tripLastModifiedDate" />
+
+    <item type="id" name="tripOriginalAuthor" />
+    <item type="id" name="tripCreationDate" />
+    <item type="id" name="tripExcursions" />
+
+    <!-- Create trip -->
+    <item type="id" name="tripTravelModeSpinner" />
+    <item type="id" name="tripShareModeSpinner" />
+
+    <!-- Map -->
+    <item type="id" name="locationTrackingButton" />
+    <item type="id" name="tripInfoButton" />
+    <item type="id" name="tripMapTitle" />
+    <item type="id" name="tripMapFragment" />
+    <item type="id" name="map" />
+
+    <!-- List excursions -->
+    <item type="id" name="excursionListView" />
+    <item type="id" name="listExcursionsTitle" />
+    <item type="id" name="excursionListLine1" />
+    <item type="id" name="excursionListLine2" />
+    <item type="id" name="excursionListLine3" />
+    <item type="id" name="excursionListLine4" />
+
+    <!-- Edit excursions -->
+    <item type="id" name="editExcursionTitle" />
+    <item type="id" name="excursionEditTitle" />
+    <item type="id" name="excursionEditDescription" />
+
+    <!-- Excursion info -->
+    <item type="id" name="excursionInfoGroup" />
+    <item type="id" name="excursionInfoFragmentTitle" />
+    <item type="id" name="editExcursionButton" />
+    <item type="id" name="navigateToExcursionButton" />
+    <item type="id" name="prevExcursionButton" />
+    <item type="id" name="nextExcursionButton" />
+
+    <item type="id" name="excursionInfoTitle" />
+    <item type="id" name="excursionInfoDescription" />
+    <item type="id" name="excursionInfoCreator" />
+    <item type="id" name="excursionInfoStartLocation" />
+    <item type="id" name="excursionInfoDistance" />
+    <item type="id" name="excursionInfoMinAlt" />
+    <item type="id" name="excursionInfoMaxAlt" />
+    <item type="id" name="excursionInfoElevationGain" />
+    <item type="id" name="excursionInfoStartTime" />
+    <item type="id" name="excursionInfoEndTime" />
+    <item type="id" name="excursionInfoDuration" />
+
+    <!-- List pointOfInterest -->
+    <item type="id" name="pointOfInterestListView" />
+    <item type="id" name="addPointOfInterestButton" />
+    <item type="id" name="pointOfInterestListLine1" />
+    <item type="id" name="pointOfInterestListLine2" />
+    <item type="id" name="pointOfInterestListLine3" />
+
+
+    <!-- View/Edit/Add PointOfInterest -->
+    <item type="id" name="pointOfInterestInfoGroup" />
+    <item type="id" name="navigateToPointOfInterestButton" />
+    <item type="id" name="editPointOfInterestButton" />
+    <item type="id" name="nextPointOfInterestButton" />
+    <item type="id" name="prevPointOfInterestButton" />
+
+    <item type="id" name="pointOfInterestType" />
+    <item type="id" name="pointOfInterestTitle" />
+    <item type="id" name="pointOfInterestDescription" />
+    <item type="id" name="pointOfInterestCreator" />
+    <item type="id" name="pointOfInterestExcursion" />
+    <item type="id" name="pointOfInterestLocation" />
+    <item type="id" name="pointOfInterestLatitude" />
+    <item type="id" name="pointOfInterestLongitude" />
+    <item type="id" name="pointOfInterestDateTime" />
+    <item type="id" name="pointOfInterestTypePicker" />
+
+    <!-- Excursion name prompt -->
+    <item type="id" name="excursionNameEditText" />
+    <item type="id" name="cancel_button" />
+    <item type="id" name="save_button" />
+
+    <!-- String input dialog -->
+    <item type="id" name="inputDialogRoot" />
+    <item type="id" name="inputDialogEditText" />
+    <item type="id" name="inputDialogEditTextLayout" />
+
+</resources>
